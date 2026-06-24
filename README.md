@@ -1,5 +1,10 @@
 # Limitless
 
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.12%2B-blue)](https://python.org)
+[![GEPA](https://img.shields.io/badge/engine-GEPA-6C47C7)](https://github.com/gepa-ai/gepa)
+[![EvoSkill](https://img.shields.io/badge/extends-EvoSkill-6C47C7)](https://github.com/sentient-agi/EvoSkill)
+
 Agents fail. Their execution traces contain the information needed to fix them. Limitless reads those traces, diagnoses the failure, edits the skill file, and keeps the edit if performance improves.
 
 No model retraining. No benchmark dataset. No human annotation. Just execution traces, a reflection model, and targeted edits.
