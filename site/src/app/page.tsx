@@ -37,7 +37,7 @@ export default function Home() {
             ["#how", "How"],
             ["#why", "Why"],
             ["#stack", "Stack"],
-            ["https://github.com/limitless", "GitHub"],
+            ["https://github.com/subheeksh5599/Limitless", "GitHub"],
           ].map(([href, label]) => (
             <li key={label}>
               <a href={href} className="text-[14px] text-muted no-underline transition-colors hover:text-ink">{label}</a>
@@ -63,7 +63,7 @@ export default function Home() {
             Limitless wraps GEPA around EvoSkill to give any agent a self-improvement loop. No new model. No benchmark dataset. No RL cluster. Just execution traces, reflection, and targeted edits to skill files.
           </p>
           <a
-            href="https://github.com/limitless"
+            href="https://github.com/subheeksh5599/Limitless"
             className="reveal reveal-delay-2 relative z-10 mt-9 inline-flex items-center gap-2.5 rounded-md bg-ink px-7 py-3.5 text-sm font-medium text-white no-underline transition-colors hover:bg-[#2D2D2A] active:scale-[0.98]"
           >
             View on GitHub
@@ -188,7 +188,7 @@ export default function Home() {
           <p className="reveal mx-auto mb-8 max-w-[460px] text-muted">
             Apache 2.0. Built on GEPA and EvoSkill. Works with any LLM provider.
           </p>
-          <a href="https://github.com/limitless" className="reveal inline-flex items-center gap-2.5 rounded-md bg-ink px-7 py-3.5 text-sm font-medium text-white no-underline transition-colors hover:bg-[#2D2D2A] active:scale-[0.98]">
+          <a href="https://github.com/subheeksh5599/Limitless" className="reveal inline-flex items-center gap-2.5 rounded-md bg-ink px-7 py-3.5 text-sm font-medium text-white no-underline transition-colors hover:bg-[#2D2D2A] active:scale-[0.98]">
             View on GitHub
           </a>
         </div>
@@ -198,7 +198,7 @@ export default function Home() {
         <div className="container mx-auto flex max-w-[960px] flex-wrap items-center justify-between gap-5 px-6">
           <span>Limitless &mdash; Apache 2.0</span>
           <div className="flex gap-6">
-            <a href="https://github.com/limitless" className="text-muted no-underline transition-colors hover:text-ink">GitHub</a>
+            <a href="https://github.com/subheeksh5599/Limitless" className="text-muted no-underline transition-colors hover:text-ink">GitHub</a>
             <a href="https://github.com/sentient-agi/EvoSkill" className="text-muted no-underline transition-colors hover:text-ink">EvoSkill</a>
             <a href="https://github.com/gepa-ai/gepa" className="text-muted no-underline transition-colors hover:text-ink">GEPA</a>
           </div>
