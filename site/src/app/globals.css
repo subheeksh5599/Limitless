@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-bg: #FCFBF9;
+  --color-ink: #141316;
+  --color-muted: #6A6870;
+  --color-accent: #6C47C7;
+  --color-surface: #F8F7F9;
+  --color-border: #E8E6EC;
+  --color-pale: #F3F2F5;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+
+  .slide-left {
+    opacity: 0;
+    transform: translateX(-24px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .slide-left.visible { opacity: 1; transform: translateX(0); }
+
+  .slide-right {
+    opacity: 0;
+    transform: translateX(24px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .slide-right.visible { opacity: 1; transform: translateX(0); }
+
+  .scale-in {
+    opacity: 0; transform: scale(0.94);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .scale-in.visible { opacity: 1; transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .slide-left, .slide-right, .scale-in { opacity: 1; transform: none; }
+}
+
+@keyframes ambientPulse {
+  0%   { transform: scale(1) translate(0, 0); opacity: 0.6; }
+  50%  { transform: scale(1.12) translate(-2%, 1%); opacity: 1; }
+  100% { transform: scale(1.04) translate(1%, -1%); opacity: 0.7; }
+}

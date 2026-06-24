@@ -1,0 +1,8 @@
+node_modules/
+.next/
+__pycache__/
+*.pyc
+.venv/
+dist/
+.env
+docs/GRANT-APPLICATION.md
