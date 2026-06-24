@@ -6,3 +6,5 @@ __pycache__/
 dist/
 .env
 docs/GRANT-APPLICATION.md
+docs/pitch-deck.md
+docs/pitch-deck.html
