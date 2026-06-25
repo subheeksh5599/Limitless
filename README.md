@@ -9,7 +9,6 @@ Agents fail. Their execution traces contain the information needed to fix them. 
 
 No model retraining. No benchmark dataset. No human annotation. Just execution traces, a reflection model, and targeted edits.
 
-Built on [GEPA](https://github.com/gepa-ai/gepa) (ICLR 2026 Oral, 5.3k stars, MIT) and extending [EvoSkill](https://github.com/sentient-agi/EvoSkill) (Sentient Labs, 959 stars, Apache 2.0).
 
 ## Install
 
